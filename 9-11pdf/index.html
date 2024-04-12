@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+           
+        }
+        p{
+            background-color: red;
+            color: white;
+        
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // quetion #01
+
+       // Function to prompt the user for their input
+function greetUser() {
+    // Prompting the user for their name
+    let userInput = prompt("Enter your city name?");
+    
+    // Checking if the user entered a name
+    if (userInput == "karachi") {
+
+        // Greeting the user
+        alert("Welcome to the city of lights");
+    } else {
+        // Handling the case if the user didn't enter a name
+        alert("Please enter your current city name");
+    }
+}
+
+// Calling the function to greet the user
+greetUser();
+    
+
+//                          Quetioon # 02
+
+// Function to greet the user based on gender
+function greetUser() {
+    // Taking input from the user
+    var gender = prompt("Please enter your gender (male/female): ").toLowerCase();
+
+    // Checking the gender and printing the corresponding message
+    if (gender === "male") {
+        alert("Good Morning Sir.");
+    } else if (gender === "female") {
+        alert("Good Morning Ma’am.");
+    } else {
+        alert("Sorry, I didn't understand your gender.");
+    }
+}
+
+// Calling the function to greet the user
+greetUser();
+
+//                      Question #03
+             
+    function traficPolice(){
+        
+        var roadTraficSignal = prompt('select the color to open your road signal')
+        var color1 = "red"
+        var color2 = "yellow"
+        var color3 = "green"
+        if
+           (roadTraficSignal === "red") {
+            var redPeHoJaye = "Must stop"
+            // alert('Must stop');
+        }else if(roadTraficSignal === "yellow"){
+            var yellowPeHoJaye = "redy to move"
+            // alert('Redy to move');
+        }if (roadTraficSignal === "green"){
+            var greenPeHoJaye = "Move now"
+            
+            // alert('Move now');
+        }else {
+        alert("Sorry, Fisrt choice your color to move to road.");
+    }
+    }
+    
+
+    document.write("<h1>Trafic Qauaneen</h1>");
+            document.write("<table>");
+            document.write("<tr><th>signal color</th> <th>Message</th></tr>");
+
+            document.write("<tr><th><p>red</p></th> <th><p>Must stop</p></th></tr>");
+
+            document.write("<tr><th>Yellow</th> <th>Redy to move</th></tr>");
+
+            document.write("<tr><th>green</th> <th>Move now</th></tr>");
+            document.write("</table>");
+
+    traficPolice();
+
+                
+                //Queston #04
+                function petrolPump(){
+                    var userCar = prompt('helo wold')
+                } 
+    </script>
+
+
+</body>
+</html>

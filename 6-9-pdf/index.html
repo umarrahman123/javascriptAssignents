@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment 6-9 </title>
+</head>
+<style>
+    #guideline {
+    width: 12%; /* Adjust the width as needed */
+    height: 1px; /* Adjust the thickness of the line */
+    border-bottom: 1px dotted black; /* Define the style of the line */
+    margin-top: 20px; /* Adjust the margin to position the guideline */
+}
+</style>
+<body>
+    <div id="guideline"></div><br>
+    
+    
+    <!-- question number 5 -->
+    <style>
+        .center{
+            position: absolute;
+            top: 50%;
+            left: 55%;
+            transform: translate(-50%, -50%);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .centered{
+            position: sticky;
+            top: 10%;
+            left: 50%;
+            transform: translate(-20%, -20%);
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+    </style>
+
+     <!-- Button to trigger the displayMultiplicationTable function -->
+     <button onclick="displayMultiplicationTable()" class="centered">Display Multiplication Table</button>
+    
+     <!-- Placeholder for the multiplication table -->
+     <div id="multiplicationTable" class="center"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>

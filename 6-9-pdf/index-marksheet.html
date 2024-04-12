@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculate Marks</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Function to calculate total marks and percentage
+        function calculateMarks() {
+            // Taking input for subject names
+            let subject1 = prompt("Enter name of first subject:");
+            let subject2 = prompt("Enter name of second subject:");
+            let subject3 = prompt("Enter name of third subject:");
+            let subject4 = prompt("Enter name of fourth subject:");
+
+            // Total marks for each subject
+            const totalMarks = 100;
+
+            // Taking obtained marks for each subject
+            let marksSubject1 = parseInt(prompt("Enter obtained marks for " + subject1 + ":"));
+            let marksSubject2 = parseInt(prompt("Enter obtained marks for " + subject2 + ":"));
+            let marksSubject3 = parseInt(prompt("Enter obtained marks for " + subject3 + ":"));
+            let marksSubject4 = parseInt(prompt("Enter obtained marks for " + subject4 + ":"));
+
+            // Calculating total obtained marks and percentage
+            let totalObtainedMarks = marksSubject1 + marksSubject2 + marksSubject3 + marksSubject4;
+            let percentage = (totalObtainedMarks / (totalMarks * 4)) * 100;
+
+            // Displaying result in a table
+            document.write("<h2>Result</h2>");
+            document.write("<table>");
+            document.write("<tr><th>Subject</th><th>Total Marks</th><th>Obtained Marks</th></tr>");
+            document.write("<tr><td>" + subject1 + "</td><td>" + totalMarks + "</td><td>" + marksSubject1 + "</td></tr>");
+            document.write("<tr><td>" + subject2 + "</td><td>" + totalMarks + "</td><td>" + marksSubject2 + "</td></tr>");
+            document.write("<tr><td>" + subject3 + "</td><td>" + totalMarks + "</td><td>" + marksSubject3 + "</td></tr>");
+            document.write("<tr><td>" + subject4 + "</td><td>" + totalMarks + "</td><td>" + marksSubject4 + "</td></tr>");
+            document.write("<tr><th>Total</th><td>" + (totalMarks * 4) + "</td><td>" + totalObtainedMarks + "</td></tr>");
+            document.write("<tr><th>Percentage</th><td colspan='2'>" + percentage.toFixed(2) + "%</td></tr>");
+            document.write("</table>");
+        }
+
+        // Calling the function to calculate and display marks
+        calculateMarks();
+    </script>
+</body>
+</html>
+
+

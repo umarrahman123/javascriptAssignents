@@ -26,10 +26,10 @@
 //              uncomments to see the results
 //          3rd Step for clothing store >>>>>>>>
 
-// var Name = "Uamarkhan";
-// var product = "T-shirt";
-// var Qty = 15;
+var Name = "Umar khan";
+var product = "T-shirt";
+var Qty = 15;
 
-// var Title = `${Name} ordered ${Qty} ${product}(s) from Umar's-clothing store.`;
+var Title = `${Name} ordered ${Qty} ${product}(s) from Umar's-clothing store.`;
 
-// alert(Title);
+alert(Title);
