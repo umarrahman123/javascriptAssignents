@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>enter your each subject number which do you acheived </h1>
+
+    <script>
+        //   >>>>>>>>>>>>   quetion #  05     <<<<<<<<<<<<<<<<
+/* var a = 4;
+if (++a === 5){
+    console.log(`given condition for variable a is true`);
+}
+var b = 82;
+if (b++ === 83){
+    alert("given condition for variable b is false");
+}
+var c = 12;
+if (c++ === 13){
+    alert("condition 1 is false");
+}
+if (c === 13){
+    alert("condition 2 is false");
+}
+if (++c < 14){
+    alert("condition 3 is true");
+}
+if(c === 14){
+    alert("condition 4 is true");
+}
+var materialCost = 20000;
+var laborCost = 2000;
+var totalCost = materialCost + laborCost;
+if (totalCost === laborCost + materialCost){
+    alert("The cost equals");
+}
+if (true){
+    alert("True");
+}
+if (false){
+    alert("False");
+}
+if("car" < "cat"){
+    alert("car is smaller than cat");
+}
+
+*/
+
+//        <<<<<<<<<<<<<<  quetion # 06 >>>>>>>>>>>>>>>>>
+
+// comments line Function to calculate grade and remarks based on percentage 
+
+/* function calculateGrade(percentage) {
+    let grade, remarks;
+    if (percentage >= 80) {
+        grade = 'Grade A-one';
+        remarks = 'Excellent';
+    } else if (percentage >= 70) {
+        grade = 'Grade A';
+        remarks = 'Good';
+    } else if (percentage >= 60) {
+        grade = 'Grade B';
+        remarks = 'You need to improve';
+    } else {
+        grade = 'Fail';
+        remarks = 'Sorry';
+    }
+    return [grade, remarks];
+}
+
+// comments line Function to calculate percentage
+function calculatePercentage(marksObtained, totalMarks) {
+    return (marksObtained / totalMarks) * 100;
+}
+
+// comments line Main function to take input and display results
+function calculateResult() {
+    let subject1 = parseFloat(prompt("Enter marks obtained in subject 1:"));
+    let subject2 = parseFloat(prompt("Enter marks obtained in subject 2:"));
+    let subject3 = parseFloat(prompt("Enter marks obtained in subject 3:"));
+    let totalMarks = parseFloat(prompt("Enter total marks:"));
+
+    let totalObtainedMarks = subject1 + subject2 + subject3;
+    let percentage = calculatePercentage(totalObtainedMarks, totalMarks);
+    let [grade, remarks] = calculateGrade(percentage);
+    
+    
+    document.write("Total Marks: " + totalMarks + "<br>");
+    document.write("Marks Obtained: " + totalObtainedMarks + "<br>");
+    document.write("Percentage: " + percentage.toFixed(2) + "%<br>");
+    document.write("Grade: " + grade + "<br>");
+    document.write("Remarks: " + remarks + "<br>");
+
+}
+// comments line Call the main function
+calculateResult();  
+
+*/
+
+//        <<<<<<<<<<<<<<<<<<<<<  question # 07  >>>>>>>>>>>>>>>>>>>>>>
+
+// comments line Generate a random secret number between 1 and 10
+/*var secretNumber = Math.floor(Math.random() * 10) + 1;
+
+// comments line Prompt user to guess the number
+var userGuess = parseInt(prompt("Guess the secret number (between 1 and 10):"));
+
+// comments line  Check if the user's guess is correct
+if (userGuess === secretNumber) {
+    alert("Bingo! Correct answer");
+} else if (userGuess + 1 === secretNumber || userGuess - 1 === secretNumber) {
+    alert("Close enough to the correct answer");
+} else {
+    alert("Sorry, incorrect guess. The secret number was " + secretNumber);
+}
+*/
+
+//      >>>>>>>>>>>>>>>>>     Question # 08   <<<<<<<<<<<<<<<<<<<
+
+// comments line Prompt the user to enter a number
+/* var number = parseInt(prompt("Enter a number:"));
+
+// comments line Check if the number is divisible by 3
+if (number % 3 === 0) {
+    alert(number + " is divisible by 3.");
+} else {
+    alert(number + " is not divisible by 3.");
+}
+*/
+
+//                    <<<<<<<<<<<<<<<<     Questoin # 09    >>>>>>>>>>>>>>>>>>
+/*
+// comments line Prompt the user to enter a number
+var number = parseInt(prompt("Enter a number:"));
+
+// comments line Check if the number is even or odd
+if (number % 2 === 0) {
+    alert(number + " is an even number.");
+} else {
+    alert(number + " is an odd number.");
+}
+*/
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>> Quetion 10 <<<<<<<<<<<<<<<<<<<<<<<
+
+/*// Prompt the user to enter the temperature
+var temperature = parseFloat(prompt("Enter the temperature:"));
+
+// Check the temperature and display the appropriate message
+
+if (temperature > 40) {
+    alert("It is too hot outside.");
+} else if (temperature > 30) {
+    alert("The Weather today is Normal.");
+} else if (temperature > 20) {
+    alert("Today’s Weather is cool.");
+} else if (temperature > 10) {
+    alert("OMG! Today’s weather is so Cool.");
+} else {
+    alert("It's freezing outside!");
+}
+*/
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>> Quetion 11 <<<<<<<<<<<<<<<<<<<<<<<
+/*
+// Prompt the user to enter the first number
+var firstNumber = parseFloat(prompt("Enter the first number:"));
+
+// Prompt the user to enter the second number
+var secondNumber = parseFloat(prompt("Enter the second number:"));
+
+// Prompt the user to enter the operation
+var operation = prompt("Enter the operation (+, -, *, /, %):");
+
+// Variable to store the result
+var result;
+
+// Check the operation and perform the corresponding calculation
+if (operation === '+') {
+    result = firstNumber + secondNumber;
+} else if (operation === '-') {
+    result = firstNumber - secondNumber;
+} else if (operation === '*') {
+    result = firstNumber * secondNumber;
+} else if (operation === '/') {
+    // Check if the second number is not zero to avoid division by zero error
+    if (secondNumber !== 0) {
+        result = firstNumber / secondNumber;
+    } else {
+        result = "Cannot divide by zero";
+    }
+} else if (operation === '%') {
+    // Check if the second number is not zero to avoid division by zero error
+    if (secondNumber !== 0) {
+        result = firstNumber % secondNumber;
+    } else {
+        result = "Cannot calculate modulus by zero";
+    }
+} else {
+    result = "Invalid operation";
+}
+
+// Display the result to the user
+alert("Result: " + result);
+*/
+
+</script>
+
+</body>
+</html>

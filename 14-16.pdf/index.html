@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array 14-16 cheoters</title>
+</head>
+<body>
+    <script>
+//   >>>>>>>>>>>   quetion # 01   >>>>>>>>>>>>>>>>>
+/// empty Array
+var studentInFutur = []; // Empty array to store student name
+//add in some student in futue 
+studentInFutur.unshift('umar');
+console.log(studentInFutur);
+studentInFutur.unshift('kamaran','naveed','akaram','aaqib');
+console.log(studentInFutur);
+
+//   >>>>>>>>>>>   quetion # 02   >>>>>>>>>>>>>>>>>
+
+var studentData = {
+    studentNames: [] // Empty array to store student names
+};
+
+studentData.studentNames.push("Alice");
+studentData.studentNames.push("Bob");
+
+console.log(studentData );
+
+//   >>>>>>>>>>>   quetion # 03   >>>>>>>>>>>>>>>>>
+
+var stringsArray = ["apple", "banana", "orange", "grape"];
+
+var stringsArray = []; // Empty array
+stringsArray.push("mabngo");
+stringsArray.push("orarnge");
+stringsArray.push("malta");
+stringsArray.push("angoor");
+
+console.log(stringsArray);
+//   >>>>>>>>>>>   quetion # 04   >>>>>>>>>>>>>>>>>
+
+var numbersArray = [];
+
+var numbersArray = []; // Empty array
+numbersArray.push(1);
+numbersArray.push(2);
+numbersArray.push(3);   
+numbersArray.push(4);
+
+console.log(numbersArray);
+
+//   >>>>>>>>>>>   quetion # 05   >>>>>>>>>>>>>>>>>
+
+var booleanArray = [true, false, true, false];
+
+var booleanArray = []; // Empty array
+booleanArray.push(true);
+booleanArray.push(false);
+booleanArray.push(true);
+booleanArray.push(false);
+
+console.log(booleanArray);
+
+//   >>>>>>>>>>>   quetion # 06   >>>>>>>>>>>>>>>>>
+/*
+var mixedArray = [42, "apple", true, { name: "John", age: 30 }, null];
+console.log(mixedArray);*/
+
+//   >>>>>>>>>>>   quetion # 07   >>>>>>>>>>>>>>>>>
+/*
+
+var qualifications = ['SSC', 'HSC', 'BCS', 'BS', 'BCOM', 'MS', 'M. Phil.', 'PhD'];
+
+document.write("<h1>Qualification" + "<br>")
+    document.write("1." + qualifications[0] + "<br>" ) 
+    document.write("2." + qualifications[1] + "<br>" ) 
+    document.write("3." + qualifications[2] + "<br>" ) 
+    document.write("4." + qualifications[3] + "<br>" ) 
+    document.write("5." + qualifications[4] + "<br>" ) 
+    document.write("6." + qualifications[5] + "<br>" ) 
+    document.write("7." + qualifications[6] + "<br>" ) 
+    document.write("8." + qualifications[7] + "<br>" ) 
+    
+    */
+    //   >>>>>>>>>>>   quetion # 08   >>>>>>>>>>>>>>>>>
+    
+/*
+
+    // Function to calculate percentage
+    function calculatePercentage(score, totalMarks) {
+    return (score / totalMarks) * 100;
+}
+// Main program
+const names = ["Student 1", "Student 2", "Student 3"];
+const scores = [320, 230, 480]; // Example scores, you can change these
+const totalMarks = 500;
+
+// Function to display scores and percentages
+function displayScoresAndPercentages(names, scores, totalMarks) {
+    for (let i = 0; i < names.length; i++) {
+        const percentage = calculatePercentage(scores[i], totalMarks);
+        console.log(`${names[i]} scored ${scores[i]} out of ${totalMarks}, which is ${percentage}%`);
+    }
+}
+displayScoresAndPercentages(names, scores, totalMarks);
+
+*/
+
+//   >>>>>>>>>>>   quetion # 09   >>>>>>>>>>>>>>>>>
+
+/*
+
+// Initialize array with color names
+let colors = ["Red", "Green", "Blue"];
+
+// Display array elements in the browser
+console.log("Initial array:", colors);
+
+// a. Add color to the beginning of the array
+let colorToAddAtBeginning = prompt("Enter a color to add to the beginning:");
+colors.unshift(colorToAddAtBeginning);
+console.log("Array after adding color at the beginning:", colors);
+
+// b. Add color to the end of the array
+let colorToAddAtEnd = prompt("Enter a color to add to the end:");
+colors.push(colorToAddAtEnd);
+console.log("Array after adding color at the end:", colors);
+
+// c. Add two more colors to the beginning of the array
+colors.unshift("Yellow", "Orange");
+console.log("Array after adding two more colors to the beginning:", colors);
+
+// d. Delete the first color in the array
+colors.shift();
+console.log("Array after deleting the first color:", colors);
+
+// e. Delete the last color in the array
+colors.pop();
+console.log("Array after deleting the last color:", colors);
+
+// f. Add color at desired position/index
+let indexToAdd = parseInt(prompt("Enter the index where you want to add the color:"));
+let colorToAdd = prompt("Enter the color you want to add:");
+colors.splice(indexToAdd, 0, colorToAdd);
+console.log("Array after adding color at index", indexToAdd, ":", colors);
+
+// g. Delete colors from user-defined position/index
+let indexToDelete = parseInt(prompt("Enter the index from where you want to delete color(s):"));
+let numberOfColorsToDelete = parseInt(prompt("Enter the number of colors you want to delete:"));
+colors.splice(indexToDelete, numberOfColorsToDelete);
+console.log("Array after deleting color(s) from index", indexToDelete, ":", colors);
+
+*/
+
+//   >>>>>>>>>>>   quetion # 10   >>>>>>>>>>>>>>>>>
+
+// Main program
+let studentScores = [320, 230, 480, 120,]; // Example scores, you can modify these
+console.log("Scores of Students:", studentScores);
+
+// Function to sort scores in ascending order
+function sortScores(scores) {
+    return scores.sort(function(a, b) {
+        return a - b;   
+    });
+}
+
+
+let sortedScores = sortScores(studentScores);
+console.log("Ordered scores of students:", sortedScores);
+
+
+
+
+
+</script>
+</body>
+</html>
