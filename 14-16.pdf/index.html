@@ -155,6 +155,8 @@ console.log("Array after deleting color(s) from index", indexToDelete, ":", colo
 
 //   >>>>>>>>>>>   quetion # 10   >>>>>>>>>>>>>>>>>
 
+/*
+
 // Main program
 let studentScores = [320, 230, 480, 120,]; // Example scores, you can modify these
 console.log("Scores of Students:", studentScores);
@@ -170,10 +172,102 @@ function sortScores(scores) {
 let sortedScores = sortScores(studentScores);
 console.log("Ordered scores of students:", sortedScores);
 
+*/
+
+//   >>>>>>>>>>>   quetion # 11   >>>>>>>>>>>>>>>>>
 
 
+/*
+// Initialize array with city names
+let cities = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar",];
 
+// Copy 3 array elements from cities array to selectedCities array
+let selectedCities = cities.slice(2, 4);
+
+// Display both arrays
+console.log("Cities list:", cities);
+console.log("Selected cities list:", selectedCities);
+
+
+*/
+
+
+/*
+var arr =["This", "is", "my","cat."];
+//      before join
+
+document.write("<h1>Array:" + "<br>" );
+    document.write(arr + "<br>");
+    
+    //      after join
+    var singleString = arr.join(" ");
+    document.write("<h1>String:" + "<br>");
+        document.write(singleString);
+        */
+//   >>>>>>>>>>>   quetion # 13   >>>>>>>>>>>>>>>>>
+/*
+
+// Initialize an empty array to store values in FIFO order
+let fifoFirst = ['keybord', 'mouse', 'printer', 'moniter'];
+document.write("<h1>Devices:" + "<br>")
+document.write(fifoFirst + "<br>")
+// Function to add value to the fifoFirst
+function addToQueue(value) {
+    fifoFirst.push(value);
+}
+// Function to remove value from the fifoFirst
+function removeFromQueue() {
+    return fifoFirst.shift();
+}
+// Adding values to the fifoFirst
+addToQueue("keybord 1");
+addToQueue("mouse 2");
+addToQueue("printer 3");
+addToQueue("moniter 4");
+
+// Removing values from the fifoFirst and displaying them
+document.write("<h2>Oot:" + "<br>" + removeFromQueue() + "<br>"); // Output: Value 1
+document.write("<h2>Oot:" + "<br>" + removeFromQueue() + "<br>"); // Output: Value 2
+document.write("<h2>Oot:" + "<br>" + removeFromQueue() + "<br>"); // Output: Value 3
+document.write("<h2>Oot:" + "<br>" + removeFromQueue() + "<br>"); // Output: Value 3
+*/
+   
+//   >>>>>>>>>>>   quetion # 14   >>>>>>>>>>>>>>>>>
+
+/*
+
+// Initialize an empty array to store values in LIFO order
+let lifoLast = ['keybord', 'mouse', 'printer', 'moniter'];
+document.write("<h1>Devices:" + "<br>");
+    document.write(lifoLast + "<br>")
+// Function to add value to the lifoLast
+function addToStack(value) {
+    lifoLast.push(value);
+}
+
+// Function to remove value from the lifoLast
+function removeFromStack() {
+    return lifoLast.pop();
+}
+
+// Adding values to the lifoLast
+addToStack("keybord ");
+addToStack("mouse ");
+addToStack("peinter ");
+addToStack("moniter ");
+
+// Removing values from the lifoLast and displaying them
+document.write("<h2>Oot:" + "<br>" + removeFromStack() + "<br>"); // Output: Value 4
+    document.write("<h2>Oot:" + "<br>" + removeFromStack() + "<br>"); // Output: Value 2
+        document.write("<h2>Oot:" + "<br>" + removeFromStack() + "<br>"); // Output: Value 1
+document.write("<h2>Oot:" + "<br>" + removeFromStack() + "<br>"); // Output: Value 1
+    
+*/
+
+    //   >>>>>>>>>>>   quetion # 15   >>>>>>>>>>>>>>>>>
+let phoneManufacturers = ['apple','samsung','motorola','Mokia','sony','Haier'];
+document.write(`<select><option>${phoneManufacturers[0]}</option><option>${phoneManufacturers[1]}</option><option>${phoneManufacturers[2]}</option><option>${phoneManufacturers[3]}</option><option>${phoneManufacturers[4]}</option><option>${phoneManufacturers[5]}</option></select>`);
 
 </script>
-</body>
+</body> 
 </html>
