@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Question 01 >>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <!-- <script>
+        function displayCurrentDateTime() {
+            // Create a new Date object
+            const now = new Date();
+            
+            // Get date and time components
+            const date = now.toLocaleDateString(); // Format: MM/DD/YYYY
+            const time = now.toLocaleTimeString(); // Format: HH:MM:SS AM/PM
+            
+            // Display in the browser
+            document.write(`<p>Current Date & Time: ${date} ${time}</p>`);
+        }
+        
+        // Call the function to display current date & time
+        displayCurrentDateTime();
+        
+    </script> -->
+    <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Question 02 >>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+    
+    <!-- <script>
+        function greetUser(firstName, lastName) {
+            // Concatenate first name and last name to form full name
+            const fullName = `${firstName} ${lastName}`;
+            
+            // Display greeting message
+            alert(`Hello, ${fullName}! Welcome.`);
+        }
+        
+        // Example usage:
+        let firstName = prompt("Enter your first name:");
+        let lastName = prompt("Enter your last name:");
+        
+        // Call the function to greet the user
+        greetUser(firstName, lastName);
+
+    </script> -->
+
+
+        <!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Question 03 >>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+        
+        <!-- <script>
+            function addNumbers() {
+                // Prompt the user for the first number
+                let num1 = parseFloat(prompt("Enter the first number:"));
+                
+    // Prompt the user for the second number
+    let num2 = parseFloat(prompt("Enter the second number:"));
+
+    // Calculate the sum
+    let sum = num1 + num2;
+
+    // Return the sum
+    return sum;
+    }
+
+    // Call the function and store the result
+    let result = addNumbers();
+    
+    // Display the result
+    alert(`The sum of the two numbers is: ${result}`);
+    
+    </script> -->
+
+
+<!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Question 04 >>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+<!-- <script>
+    function calculate(num1, num2, operator) {
+        let result;
+        
+        // Perform the operation based on the operator
+        switch (operator) {
+        case '+':
+        result = num1 + num2;
+        break;
+        case '-':
+        result = num1 - num2;
+        break;
+        case '*':
+        result = num1 * num2;
+        break;
+        case '/':
+        // Check for division by zero
+        if (num2 !== 0) {
+            result = num1 / num2;
+        } else {
+            result = "Cannot divide by zero";
+        }
+        break;
+        default:
+        result = "Invalid operator";
+    }
+
+    // Display the result in the browser
+    document.write(`<p>Result of ${num1} ${operator} ${num2} = ${result}</p>`);
+}
+
+// Example usage:
+calculate(10, 5, '+');  // Example: 10 + 5
+calculate(20, 4, '-');  // Example: 20 - 4
+calculate(8, 2, '*');   // Example: 8 * 2
+calculate(12, 3, '/');  // Example: 12 / 3
+calculate(15, 0, '/');  // Example: Division by zero case
+calculate(7, 3, '%');   // Example: Invalid operator case
+
+</script> -->
+
+<!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Question 05 >>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+<!-- <script>
+    let num = prompt("enter your number")
+    function squareNumber(number) {
+        return number * number;
+    }
+    
+    // Example usage:
+    let squared = squareNumber(num);
+    alert(`The square of ${num} is: ${squared}`);  
+    
+</script> -->
+
+<!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Question 06 >>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+<!-- <script>
+    function factorial(n) {
+    // Base case: factorial of 0 or 1 is 1
+    if (n === 0 || n === 1) {
+        return 1;
+    }
+    // Recursive case: factorial of n is n times factorial of (n-1)
+    else {
+        return n * factorial(n - 1);
+    }
+}
+
+// Example usage:     ///  agar 3 lika ho to                3*2*1 =6  
+let num = 5;          ///agar6 lika ho                6*5*4*3*2*1 =720 
+let result = factorial(num);/// agr 5 ho to             5*4*3*2*1 =120  
+alert(`The factorial of ${num} is: ${result}`);  // Output: The factorial of 5 is: 120
+//4*3*2*1=24
+//5*4*3*2*1=
+</script> -->
+
+<!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Question 07 >>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+<!-- <script>
+    function countNumbers(start, end) {
+        // Validate inputs: Ensure start and end are numbers
+        if (typeof start !== 'number' || typeof end !== 'number' || isNaN(start) || isNaN(end)) {
+            document.write(`<p>Invalid inputs. Please enter valid numbers.</p>`);
+            return;
+        }
+        
+        // Determine the direction of counting (increasing or decreasing)
+        let step = start <= end ? 1 : -1;
+        
+        // Loop to display numbers
+        for (let i = start; i !== end + step; i += step) {
+            document.write(`${i} `);
+        }
+        document.write(`<br>`);
+    }
+    
+    // Example usage:
+    countNumbers(1, 100);   // Count from 1 to 10
+    document.write(`<br>`);
+    countNumbers(20, 1);  // Count from 20 to 15
+    document.write(`<br>`);
+    countNumbers(5, -100);   // Count from 5 to -5
+    
+</script> -->
+
+
+<!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Question 08 >>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+<!-- <script>
+    function calculateHypotenuse() {
+    // Inner function to calculate square of a number
+    function calculateSquare(x) {
+        return x * x;
+    }
+
+    // Prompt the user for base and perpendicular
+    let base = parseFloat(prompt("Enter the length of the base of the triangle:"));
+    let perpendicular = parseFloat(prompt("Enter the length of the perpendicular (height) of the triangle:"));
+
+    // Validate inputs
+    if (isNaN(base) || isNaN(perpendicular)) {
+        document.write(`<p>Invalid inputs. Please enter valid numbers.</p>`);
+        return;
+    }
+
+    // Calculate squares of base and perpendicular using inner function
+    let baseSquared = calculateSquare(base);
+    let perpendicularSquared = calculateSquare(perpendicular);
+
+    // Calculate hypotenuse squared
+    let hypotenuseSquared = baseSquared + perpendicularSquared;
+
+    // Calculate hypotenuse using Math.sqrt
+    let hypotenuse = Math.sqrt(hypotenuseSquared);
+
+    // Display the calculated hypotenuse
+    document.write(`<p>For a triangle with base ${base} and perpendicular ${perpendicular}, the hypotenuse is: ${hypotenuse}</p>`);
+}
+
+// Call the function to calculate and display the hypotenuse
+calculateHypotenuse();
+
+
+</script> -->
+
+<!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Question 09 >>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+<!-- <script>
+    // Function to calculate area with arguments as values
+    function calculateRectangleArea(width, height) {
+        // Calculate area
+        let area = width * height;
+        // Return the calculated area
+        return area;
+    }
+    
+    // Example usage with arguments as values
+    let area1 = calculateRectangleArea(5, 3);  // Width = 5, Height = 3
+    console.log(`Area of the rectangle (arguments as values): ${area1}`);  // Output: Area of the rectangle (arguments as values): 15
+    
+
+    
+    // Function to calculate area with arguments as variables
+    function calculateRectangleAreaWithVars() {
+        // Define variables for width and height
+        let width = 4;
+        let height = 6;
+        // Calculate area
+        let area = width * height;
+        // Return the calculated area
+        return area;
+    }
+    
+    // Example usage with arguments as variables
+    let area2 = calculateRectangleAreaWithVars();
+    console.log(`Area of the rectangle (arguments as variables): ${area2}`);  // Output: Area of the rectangle (arguments as variables): 24
+    
+</script> -->
+
+<!-- <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Question 10 >>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+    <!-- <script>
+        function isPalindrome(str) {
+    // Remove non-alphanumeric characters and convert to lowercase
+    str = str.toLowerCase().replace(/[\W_]/g, '');
+
+    // Compare original string with reversed string
+    return str === str.split('').reverse().join('');
+}
+
+// Example usage:
+let str1 = "madam";
+console.log(`${str1} is a palindrome: ${isPalindrome(str1)}`);  // Output: madam is a palindrome: true
+
+let str2 = "Hello";
+console.log(`${str2} is a palindrome: ${isPalindrome(str2)}`);  // Output: Hello is a palindrome: false
+
+    </script>  -->
+    
+
+</body>
+</html>

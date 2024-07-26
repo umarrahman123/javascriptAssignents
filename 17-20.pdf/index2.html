@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array and loops</title>
+    <style>
+        .container {
+            width: 300px;
+            margin: 50px auto;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        button {
+            border-radius: 10px;
+
+            width: 100%;
+            margin-left: 12px;;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #83da7e;
+        }
+        #output{
+            margin-left: 23px;
+            background-color: red;
+            /* text-align: center;
+            justify-content: center; */
+        }
+    </style>
+</head>
+<body>
+   <h1>Question # 04</h1>
+
+   <div class="container">
+    <input type="number" id="numberInput" placeholder="Enter a number to show its multiplication table">
+    <input type="number" id="lengthInput" placeholder="Enter the length of the table">
+    <button onclick="generateTable()">Enter a numbern to show its multiplication table</button>
+    <div id="output"></div>
+</div> 
+   <script>
+
+    function generateTable() {
+            const number = parseInt(document.getElementById("numberInput").value);
+            const length = parseInt(document.getElementById("lengthInput").value);
+            const outputDiv = document.getElementById("output");
+            outputDiv.innerHTML = ""; // Clearing previous output
+            
+            // Checking if the input is valid
+            if (isNaN(number) || isNaN(length)) {
+                outputDiv.innerText = "Please enter valid numbers.";
+            } else {
+                // Generating and printing the multiplication table
+                let table = "";
+                for (let i = 1; i <= length; i++) {
+                    table += `${number} * ${i} = ${number * i}\n`;
+                }
+                outputDiv.innerText = `Multiplication table of ${number} with length ${length}:\n${table}`;
+            }
+        }
+
+
+   </script>
+   <!-- from here start Quetion # 06 -->
+
+<h2>Series Generation</h2>
+  
+<h3>a. Counting:</h3>
+<p id="counting"></p>
+
+<h3>b. Reverse counting:</h3>
+<p id="reverseCounting"></p>
+
+<h3>c. Even:</h3>
+<p id="even"></p>
+
+<h3>d. Odd:</h3>
+<p id="odd"></p>
+
+<h3>e. Series:</h3>
+<p id="series"></p>
+   <script src="app2.js"></script>
+</body>
+</html>

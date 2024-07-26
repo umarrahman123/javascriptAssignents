@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Display Current Date and Time</title>
+
+<!-- <<<<<<<<<<<<<<<<<<<<<< question No 01 >>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 20px;
+    }
+    .container {
+        width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+    h2 {
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+</style>
+</head>
+<body>
+
+    
+<div class="container">
+    <h2>Current Date and Time</h2>
+    <p id="dateTime"></p>
+</div>
+
+<script>
+// Function to display current date and time
+function displayDateTime() {
+    var currentDate1 = new Date();
+    var dateString = currentDate1.toDateString();
+    var timeString = currentDate1.toLocaleTimeString();
+
+    var dateTimeString = dateString + ' ' + timeString;
+    document.getElementById("dateTime").textContent = dateTimeString;
+}
+
+// Call the function initially to display current date and time
+displayDateTime();
+
+// Update the displayed time every second
+setInterval(displayDateTime, 1000);
+</script>
+
+
+<!-- <<<<<<<<<<<<<<<<<<<<<< question No 02 >>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+<!-- <script>
+    // Get the current date
+var currentDate = new Date();
+
+// Array of month names
+var monthNames = [
+    "January", "February", "March", "April", "May", "June", "July",
+    "August", "September", "October", "November", "December"
+];
+
+// Get the current month index (0-11)
+var currentMonthIndex = currentDate.getMonth();
+
+// Get the current month name
+var currentMonth = monthNames[currentMonthIndex];
+
+// Alert the current month
+alert("The current month is: " + currentMonth);
+
+</script> -->
+
+<!-- <<<<<<<<<<<<<<<<<<<<<< question No 03 >>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+<!-- <script>
+    // Get the current date
+let currentDate = new Date();
+
+// Array of weekday names
+let daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+// Get the day of the week (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
+let dayOfWeekIndex = currentDate.getDay();
+
+// Get the abbreviated day name
+let abbreviatedDay = daysOfWeek[dayOfWeekIndex];
+
+// Alert the abbreviated day name
+// alert(abbreviatedDay) abbreviatedDay;
+alert("The current day is: " + abbreviatedDay);
+
+</script> -->
+
+<!-- <<<<<<<<<<<<<<<<<<<<<< question No 03 >>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+<!-- <script>
+    
+    // Get the current date
+let currentDate2 = new Date();
+
+// Array of weekday names
+let weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+// Get the index of the current day (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
+let dayIndex = currentDate.getDay();
+
+// Get the 3-letter abbreviation of the current day
+let dayAbbreviation = weekdays[dayIndex];
+let text = "Today is"
+
+// Alert the abbreviation
+alert("Today is:" + dayAbbreviation);
+</script> -->
+
+<!-- <<<<<<<<<<<<<<<<<<<<<< question No 04 >>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+<!-- <script>
+    // Get the current date
+    let currentDate = new Date();
+// let weekdays = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+// Get the day of the week (0 = Sunday, 1 = Monday, ..., 6 = Saturday)
+let dayOfWeek = currentDate.getDay();
+
+// Check if today is Saturday (6) or Sunday (0)
+if (dayOfWeek === 6 || dayOfWeek === 2) {
+    alert("It's Fun day");
+} else {
+    alert("Today is not a fun day ");
+}
+
+</script> -->
+
+
+<!-- <<<<<<<<<<<<<<<<<<<<<< question No 05 >>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+<!-- <script>
+    // Get the current date
+    const currentDate = new Date();
+    
+    // Get the day of the month (1-31)
+    const dayOfMonth = currentDate.getDate();
+    
+    // Check if the day is less than 16
+    if (dayOfMonth < 16) {
+        alert("First fifteen days of the month");
+} else {
+    alert("Last days of the month");
+}
+
+</script> -->
+
+<!-- <<<<<<<<<<<<<<<<<<<<<< question No 06 >>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+<!-- <script>
+    // Using the Date object to get current time in milliseconds since epoch
+const currentTimeInMillis = Date.now();
+
+// Calculate minutes since midnight Jan. 1, 1970
+const minutesSinceEpoch = Math.floor(currentTimeInMillis / (1000 * 60));
+
+// Display the result
+alert(`Minutes since midnight Jan. 1, 1970: ${minutesSinceEpoch}`);
+
+</script> -->
+
+<!-- <<<<<<<<<<<<<<<<<<<<<< question No 07 >>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+<!-- <script>
+    // Create a new Date object to get current time
+    const now = new Date();
+    
+    // Get the current hour (0-23)
+    const currentHour = now.getHours();
+    
+    // Check if it's before noon (AM) or after noon (PM)
+    if (currentHour < 12) {
+    alert("It's AM");
+} else {
+    alert("It's PM");
+}
+
+</script> -->
+
+<!-- <<<<<<<<<<<<<<<<<<<<<< question No 08 >>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+<!-- <script>
+    // Create a Date object for January 1, 2021
+    let laterDate = new Date(2024, 11, 31); // Month is zero-based (7 represents july)
+    
+    // Adjust to the last day of the month
+    laterDate.setMonth(laterDate.getMonth() + 1); // Move to next month
+    laterDate.setDate(0); // Set to the last day of the previous month
+    
+    alert(laterDate);
+    
+</script> -->
+
+<!-- <<<<<<<<<<<<<<<<<<<<<< question No 09 >>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+<!-- <script>
+    // Create a Date object for June 18, 2015 (1st Ramadan)
+    const ramadanStartDate = new Date(2015, 5, 18); // Month is zero-based (5 represents June)
+    
+    // Get the current date
+    const currentDate = new Date();
+    
+    // Calculate the difference in milliseconds between currentDate and ramadanStartDate
+    const differenceMs = currentDate - ramadanStartDate;
+    
+    // Convert milliseconds to days
+    const daysPassed = Math.floor(differenceMs / (1000 * 60 * 60 * 24));
+    
+    // Alert the number of days passed since 1st Ramadan
+    alert(`${daysPassed} Days have passed since 1st Ramazan, 2015`);
+    
+</script> -->
+
+<!-- <<<<<<<<<<<<<<<<<<<<<< question No 10 >>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+<!-- <script>
+    // Define the reference date (current date and time)
+    const referenceDate = new Date();
+    
+    // Create a Date object for the beginning of 2015
+    const beginningOf2015 = new Date(2015, 0, 1, 0, 0, 0); // January is month 0 in JavaScript
+    
+    // Calculate the difference in seconds
+    const differenceInSeconds = Math.floor((referenceDate - beginningOf2015) / 1000);
+    
+    // Display the result in the browser
+    document.write(`<p>once refrence date (${referenceDate}) (${beginningOf2015}): ${differenceInSeconds} seconds has passed since beginning of 2015.</p>`);
+    
+</script> -->
+<!-- <<<<<<<<<<<<<<<<<<<<<< question No 13 >>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+<!-- <script>
+    // Ask the user for their age
+let age = prompt("Please enter your age:");
+
+// Convert the input from string to number
+age = parseInt(age);
+
+// Get the current year
+const currentYear = new Date().getFullYear();
+
+// Calculate the birth year
+const birthYear = currentYear - age;
+
+// Display the result in the browser
+document.write(`<p>Your birth year is: ${birthYear}</p>`);
+
+</script> -->
+
+<!-- <<<<<<<<<<<<<<<<<<<<<< question No 14 >>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+<script>
+    // Ask user for inputs
+let customerName = prompt("Enter customer name:");
+let currentMonth = prompt("Enter current month:");
+let numberOfUnits = parseFloat(prompt("Enter number of units consumed:"));
+let chargesPerUnit = parseFloat(prompt("Enter charges per unit:"));
+let latePaymentSurchargeRate = parseFloat(prompt("Enter late payment surcharge rate (%):"));
+
+// Calculate net amount payable within due date
+let netAmountPayable = numberOfUnits * chargesPerUnit;
+netAmountPayable = Math.round(netAmountPayable * 100) / 100; // Round to 2 decimal places
+
+// Calculate late payment surcharge
+let latePaymentSurcharge = (latePaymentSurchargeRate / 100) * netAmountPayable;
+latePaymentSurcharge = Math.round(latePaymentSurcharge * 100) / 100; // Round to 2 decimal places
+
+// Calculate gross amount payable after due date
+let grossAmountPayable = netAmountPayable + latePaymentSurcharge;
+grossAmountPayable = Math.round(grossAmountPayable * 100) / 100; // Round to 2 decimal places
+
+// Display the bill details in the browser
+document.write(`<h2>K-Electric Bill</h2>`);
+document.write(`<p><strong>Customer Name:</strong> ${customerName}</p>`);
+document.write(`<p><strong>Current Month:</strong> ${currentMonth}</p>`);
+document.write(`<p><strong>Number of Units:</strong> ${numberOfUnits}</p>`);
+document.write(`<p><strong>Charges per Unit:</strong> $${chargesPerUnit.toFixed(2)}</p>`);
+document.write(`<p><strong>Net Amount Payable (within Due Date):</strong> $${netAmountPayable.toFixed(2)}</p>`);
+document.write(`<p><strong>Late Payment Surcharge:</strong> $${latePaymentSurcharge.toFixed(2)}</p>`);
+document.write(`<p><strong>Gross Amount Payable (after Due Date):</strong> $${grossAmountPayable.toFixed(2)}</p>`);
+
+</script>
+</body>
+</html>

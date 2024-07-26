@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrya in loos </title>
+</head>
+<body>
+<h1>Question # 07</h1> 
+<script>
+    // Array of items
+    var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+
+    // Function to search item in array
+    function searchItem() {
+      var userInput = prompt("Welcome to UMAR'S Bakery. What do you want to order, sir/ma'am?");
+      var index = A.indexOf(userInput.toLowerCase());
+      if (index !== -1) {
+        alert(userInput + " is available at index " + index + " in our bakery.");
+      } else {
+        alert("We are sorry. The item is not available in our bakery.");
+      }
+    }
+
+    // Call the searchItem function
+    searchItem();
+  </script>
+</body>
+</html>
